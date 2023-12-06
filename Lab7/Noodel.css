@@ -1,0 +1,88 @@
+:root{
+    --primary: #3cb815;
+    --light: #f7f8fc;
+    --info:#dd5720;
+}
+/* top menu */
+.top_bar{
+    height: 45px;
+    border-bottom: 1px solid rgb(0,0,0,0.07);
+    background-image: url(./img/carousel-1.jpg);
+    background-size: 100%;
+    
+}
+/* nav menu */
+.navbar{
+    background-image: url(./img/carousel-1.jpg);
+    background-size: 100%;
+}
+.navbar-brand{
+    font-family: 'Hedvig Letters Serif', serif;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.navbar-brand span{
+    color: var(--info);
+}
+.btn-sm-square{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    color: black;
+}
+/* carousel */
+.carousel-control-prev, .carousel-control-next{
+    width: 15%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+    border-radius: 50%;
+}
+.carousel-caption{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    z-index: 1;
+}
+.carousel-caption h1{
+    font-family: 'Hedvig Letters Serif', serif;
+    color: black;
+}
+.carousel-caption a{
+    color: var(--light);
+}
+.btn-st{
+    background-color: var(--primary);
+}
+.btn_nd{
+    background-color: #dd5720;
+}
+/* about */
+.about_img img{
+    width: 100%;
+}
+/* Our Features */
+.btn-features{
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.btn-features:hover {
+    background-color: #3cb815;
+}
+.our_features{
+    background-image: url(./img/bg-icon.png);
+    background-size: 100%;
+}
