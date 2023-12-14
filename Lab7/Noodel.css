@@ -3,18 +3,22 @@
     --light: #f7f8fc;
     --info:#dd5720;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: var(--primary);
+}
 /* top menu */
 .top_bar{
     height: 45px;
     border-bottom: 1px solid rgb(0,0,0,0.07);
     background-image: url(./img/carousel-1.jpg);
-    background-size: 100%;
-    
 }
 /* nav menu */
 .navbar{
     background-image: url(./img/carousel-1.jpg);
-    background-size: 100%;
 }
 .navbar-brand{
     font-family: 'Hedvig Letters Serif', serif;
@@ -70,19 +74,180 @@
 .btn_nd{
     background-color: #dd5720;
 }
-/* about */
+/* about us */
 .about_img img{
     width: 100%;
+}
+.fa-check{
+    color: var(--primary);
 }
 /* Our Features */
 .btn-features{
     border: 2px solid var(--primary);
     color: var(--primary);
 }
-.btn-features:hover {
-    background-color: #3cb815;
-}
-.our_features{
+.bg-icon{
     background-image: url(./img/bg-icon.png);
-    background-size: 100%;
+    background-size: contain;
+}
+.section-header{
+    position: relative;
+    padding-top: 25px;
+}
+.section-header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 2px;
+    width: 60px;
+    background-color: var(--primary);
+    transform: translate(-50%);
+}
+.section-header::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    height: 2px;
+    width: 80px;
+    background-color: var(--info);
+    transform: translate(-50%);
+}
+/* ours products */
+.section-header-2{
+    position: relative;
+    padding-top: 25px;
+}
+.section-header-2::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 60px;
+    background-color: var(--primary);
+}
+.section-header-2::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 2px;
+    width: 80px;
+    background-color: var(--info);
+}
+.link_product{
+    border: 2px solid var(--primary);
+    color: black;
+}
+.link_product:hover{
+    background-color: var(--primary);
+    color: white;
+    border: transparent;
+}
+.btn-new{
+    background-color: var(--info);
+}
+.btn-new:hover{
+    background-color: var(--primary);
+}
+.product-item{
+    box-shadow: 0 0 45px rgb(0,0,0,0.07);
+}
+.product-item img{
+    transition: 0.5s;
+}
+.product-item img:hover{
+    transform: scale(1.1);
+}
+/* <!-- section visited --> */
+.section_visited{
+    background-color: var(--primary);
+}
+/* customer review */
+.review-carousel .owl-item .review-item img{
+    width: 60px;
+    height: 60px;
+}
+.review-carousel .owl-item .review-item,
+.review-carousel .owl-item .review-item *{
+    transition: 0.5s;
+}
+.mt-n4{
+   margin-top: -20px; 
+}
+.review-carousel .owl-item.center .review-item{
+    background: var(--primary) !important;
+}
+.review-carousel .owl-item.center .review-item *{
+    color: white;
+}
+.review-carousel .owl-item.center .review-item i{
+    color: var(--info) !important;
+}
+.review-carousel .owl-nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.review-carousel .owl-nav .owl-prev,
+.review-carousel .owl-nav .owl-next{
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary) !important;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.review-carousel .owl-nav .owl-prev:hover,
+.review-carousel .owl-nav .owl-next:hover{
+    color: white;
+    background: var(--primary);
+}
+/* blog */
+.blog-item{
+    box-shadow: 0 0 45px rgb(0,0,0,0.07);
+}
+/* footer */
+form{
+    position: relative;
+}
+.btn-signup{
+    background-color: var(--primary);
+    position: absolute;
+    top: 15%;
+    left:70%;
+}
+.icon_footer{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+    font-weight: normal;
+    color: white;
+    background-color: transparent !important;
+    border: 1px solid white;
+}
+.bx-up-arrow{
+    background-color: var(--primary) !important;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+}
+.border-top{
+    position: relative;
+}
+.icon_up{
+    position: absolute;
+    top: 10%;
+    left: 96%;
 }
